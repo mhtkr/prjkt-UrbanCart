@@ -1,0 +1,38 @@
+body
+{
+    background-color: #FFF7F1;
+}
+.header
+{
+    background-color: #FFE4C9;
+    height: 124px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.header img
+{
+    border-radius: 15px;
+}
+
+.header h1
+{
+    display: inline-block;
+    position: relative;
+    bottom: 50.56px;
+    left: 20px;
+}
+
+.navbar
+{
+    background-color: #FFE4C9;
+    padding: 10px;
+    border-radius: 10px;
+}
+.navbar nav a
+{
+    text-decoration: none;
+    padding: 5px;
+    -webkit-text-fill-color: black;
+}
