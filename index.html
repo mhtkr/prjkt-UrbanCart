@@ -4,21 +4,44 @@
         <title>UrbanCart</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="UrbanCart-01.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
     <body>
         <div class="header">
-            <img src="UrbanCart-01.png" alt="logo">
-            <h1>UrbanCart</h1>
+            <div class="logo">
+                <img src="UrbanCart-01.png" alt="logo">
+            </div>
+            <div class="ttl">
+                <h1>UrbanCart</h1>
+            </div>
+            <div class="login">
+                <button>Login</button>
+                <button>Signup</button>
+            </div>
         </div>
 
-        <div class="navbar">
             <nav>
-                <a href="">Mobiles</a>
-                <a href="">Fahion</a>
-                <a href="">Electronics</a>
-                <a href="">Appliances</a>
-                <a href="">Computers</a>
+                <ul class="sidebar">
+                    <li onclick="closeSidebar(event)"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="">Mobiles</a></li>
+                    <li><a href="">Fahion</a></li>
+                    <li><a href="">Electronics</a></li>
+                    <li><a href="">Appliances</a></li>
+                    <li><a href="">Computers</a></li>
+                </ul>
+
+                <ul class="sidebar2">
+                    <li class="hideOnMobile" ><a href="">Mobiles</a></li>
+                    <li class="hideOnMobile" ><a href="">Fahion</a></li>
+                    <li class="hideOnMobile" ><a href="">Electronics</a></li>
+                    <li class="hideOnMobile" ><a href="">Appliances</a></li>
+                    <li class="hideOnMobile" ><a href="">Computers</a></li>
+                    <li class="open_button" onclick="opensidebar(event)"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+                
+                
             </nav>
-        </div>
+
+            <script src="sidebar.js"></script>
     </body>
 </html>

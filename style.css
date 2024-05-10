@@ -1,38 +1,155 @@
 body
 {
     background-color: #FFF7F1;
+    margin: 5px;
 }
 .header
 {
+    display: grid;
+    grid-template-columns: 150px 1fr 0.2fr;
     background-color: #FFE4C9;
-    height: 124px;
     border-radius: 15px;
-    padding: 10px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+}
+
+.ttl
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header img
 {
     border-radius: 15px;
+    width: 150px;
 }
 
-.header h1
+.login
 {
-    display: inline-block;
-    position: relative;
-    bottom: 50.56px;
-    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.navbar
+@media(max-width: 500px)
+{
+    .header
+    {
+        display: block;
+    }
+
+    .logo
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img
+    {
+        width: 150px;
+    }
+
+    .header
+    {
+        padding: 25px;
+    }
+}
+
+nav
 {
     background-color: #FFE4C9;
-    padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
-.navbar nav a
+
+nav ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a
 {
     text-decoration: none;
-    padding: 5px;
-    -webkit-text-fill-color: black;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.sidebar
+{
+    background-color: #FFE4C9;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 999;
+}
+
+.sidebar a
+{
+    width: 100%;
+}
+
+.sidebar li
+{
+    width: 100%;
+    height: 50px;
+}
+
+.sidebar2
+{
+    display: flex;
+    justify-content: flex-start;
+    height: 8vh;
+}
+
+.sidebar2 a
+{
+    padding: 0 30px 0 0;
+}
+
+.open_button
+{
+    display: none;
+}
+
+
+@media(max-width: 600px)
+{
+    .hideOnMobile
+    {
+        display: none;
+    }
+
+    .sidebar2
+    {
+        justify-content: flex-end;
+    }
+
+    .open_button
+    {
+        display: block;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .sidebar
+    {
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .sidebar li
+    {
+        padding: 5px 30px ;   
+    }
 }
