@@ -1,3 +1,7 @@
+a
+{
+    text-decoration: none;
+}
 body
 {
     background-color: #FFF7F1;
@@ -229,3 +233,36 @@ nav a
     border-radius: 15px;
 }
 
+.card
+{
+    background-color: #FFE4C9;;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.card h3
+{
+    background-color: #feb94155;
+}
+
+.card_img
+{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    width: fit-content;
+    grid-gap: 20px;
+}
+
+.card_img img
+{
+    border-radius: 15px;
+
+}
+
+.card_container
+{
+    background-color: #FEB941;
+    display: grid;
+    grid-template-columns: 416px 1fr;
+}
